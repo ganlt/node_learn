@@ -31,3 +31,6 @@ const server = http.createServer((req, res) => {
 server.listen(8888)
 
 console.log('server listening http://127.0.0.1:8888')
+
+
+// node file_server.js index.html
