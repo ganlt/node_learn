@@ -1,0 +1,22 @@
+{
+  "name": "koa",
+  "version": "1.0.0",
+  "description": "Koa example with async",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "koa",
+    "async"
+  ],
+  "author": "Lintong Gan",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jinshuilinxi/koa_learn.git"
+  },
+  "dependencies": {
+    "koa": "2.0.0"
+  }
+}
