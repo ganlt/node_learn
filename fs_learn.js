@@ -8,7 +8,7 @@
 
 const fs = require('fs');
 // 异步读取文本文件
-fs.readFile('./example.txt', 'utf-8', (err, data) => {
+fs.readFile('./assets/example.txt', 'utf-8', (err, data) => {
   if (err) {
     console.log(err)
   } else {
@@ -16,7 +16,7 @@ fs.readFile('./example.txt', 'utf-8', (err, data) => {
   }
 })
 // 读取二进制文件
-fs.readFile('xxx.jpg', (err, data) => {
+fs.readFile('./assets/xxx.jpg', (err, data) => {
   if (err) {
     console.log(err)
   } else {
@@ -25,12 +25,12 @@ fs.readFile('xxx.jpg', (err, data) => {
   }
 })
 // 同步读取文件
-const data = fs.readFileSync('example.txt', 'utf-8')
+const data = fs.readFileSync('assets/example.txt', 'utf-8')
 console.log('同步：' + data)
 
 // stream
 
-const stream = fs.createReadStream('example.txt', 'utf-8')
+const stream = fs.createReadStream('assets/example.txt', 'utf-8')
 stream.on('data', (chunk) => {
   console.log('data::')
   console.log(chunk)
